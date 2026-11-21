@@ -2,7 +2,8 @@ import os
 import shutil
 from typing import List, Optional, Dict, Any
 from langchain_community.vectorstores import FAISS
-from langchain_community.embeddings import DashScopeEmbeddings, HuggingFaceEmbeddings
+from langchain_community.embeddings import DashScopeEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_core.documents import Document
 from core.reranker import create_reranker, BaseReranker
 from core.config import config
